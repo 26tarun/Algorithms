@@ -49,12 +49,13 @@ public class MedianOfTwoSortedArrays {
 		return medianOfOne(nums);
 	}
 
-	public double medianOfOne(int[] nums){
-        int middle = (nums.length-1)/2; 
-        if(nums.length%2==0){
-            double value = ((nums[middle] + nums[middle+1])/2.0);
-            return value;
-        }
-        
-        return nums[middle];
+	public double medianOfOne(int[] nums) {
+		int middle = (nums.length - 1) / 2;
+		if (nums.length % 2 == 0) {
+			double value = ((nums[middle] + nums[middle + 1]) / 2.0);
+			return value;
+		}
+
+		return nums[middle];
+	}
 }
