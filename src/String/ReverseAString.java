@@ -1,7 +1,7 @@
 package String;
 
 public class ReverseAString {
-	public String reverseWords(String s) {
+	public static String reverseWords(String s) {
 
 		if (s == null || s.length() == 0) {
 			return s;
@@ -20,7 +20,7 @@ public class ReverseAString {
 		return new String(c, 0, c.length);
 	}
 
-	public char[] reverse(char[] c, int i, int j) {
+	public static char[] reverse(char[] c, int i, int j) {
 
 		while (i < j) {
 			char temp = c[i];
@@ -34,4 +34,9 @@ public class ReverseAString {
 		return c;
 	}
 
+	public static void main(String args[]) {
+		System.out.println(reverseWords(""));
+		System.out.println(reverseWords("abcdef"));
+		System.out.println(reverseWords(""));
+	}
 }
